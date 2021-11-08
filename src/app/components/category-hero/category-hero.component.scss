@@ -1,9 +1,53 @@
-@keyframes pxb-logo-spin {
-    100% {
-        transform: rotate(360deg);
+.app-category-hero-root {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 32px;
+    min-height: 250px;
+    box-sizing: border-box;
+    &.isMobile {
     }
 }
 
-.pxb-logo {
-    animation: pxb-logo-spin 2500ms linear infinite;
+.category-hero-header-background {
+    z-index: 1;
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.category-hero-text-container {
+    width: 100%;
+    color: white;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .category-hero-header-description-container {
+        display: flex;
+        align-items: center;
+        > * {
+            width: 50%;
+            &:first-child {
+                padding-right: 8px;
+            }
+            &:last-child {
+                padding-left: 8px;
+            }
+        }
+    }
+}
+
+.category-hero-underline {
+    background-color: white;
+    width: 50px;
+    height: 4px;
+    margin-top: 24px;
 }

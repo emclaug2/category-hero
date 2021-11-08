@@ -8,29 +8,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FlexLayoutModule } from '@angular/flex-layout';
-
-import { MatButtonModule } from '@angular/material/button';
-import { MatIconModule } from '@angular/material/icon';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatDividerModule } from '@angular/material/divider';
 
 import { AppComponent } from './app.component';
-import { PxbLogoComponent } from './components/pxb-logo/pxb-logo.component';
-import { HomeComponent } from './pages/home/home.component';
-import { CategoryHeroComponent} from "./components/category-hero/category-hero.component";
+import { CategoryHeroComponent } from './components/category-hero/category-hero.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
-    declarations: [AppComponent, HomeComponent, PxbLogoComponent, CategoryHeroComponent],
-    imports: [
-        BrowserModule,
-        CommonModule,
-        FlexLayoutModule,
-        MatButtonModule,
-        MatDividerModule,
-        MatToolbarModule,
-        MatIconModule,
-    ],
+    declarations: [AppComponent, CategoryHeroComponent],
+    imports: [BrowserModule, CommonModule, FormsModule],
     providers: [],
     bootstrap: [AppComponent],
 })

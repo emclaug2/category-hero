@@ -31,9 +31,7 @@
                             "src/assets"
                         ],
                         "styles": [
-                            "src/styles.scss",
-                            "./node_modules/@pxblue/angular-themes/theme.scss",
-                            "./node_modules/@pxblue/angular-themes/open-sans.scss"
+                            "src/styles.scss"
                         ],
                         "scripts": []
                     },
@@ -101,9 +99,7 @@
                             "src/assets"
                         ],
                         "styles": [
-                            "src/styles.scss",
-                            "./node_modules/@pxblue/angular-themes/theme.scss",
-                            "./node_modules/@pxblue/angular-themes/open-sans.scss"
+                            "src/styles.scss"
                         ],
                         "scripts": []
                     }
