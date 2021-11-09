@@ -13,10 +13,19 @@
     }
 }
 
-.demo-container {
+.demo-container,
+.knobs-container {
     max-width: 1500px;
     padding: 64px;
     width: 100%;
     box-sizing: border-box;
     padding-bottom: 0;
+}
+
+.user-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    > div {
+        margin-right: 32px;
+    }
 }

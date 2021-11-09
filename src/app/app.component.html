@@ -1,11 +1,10 @@
 <div style="display: flex; flex-direction: column; align-items: center; justify-content: center">
     <div class="demo-container">
         <app-category-hero
-            [previousRoute]="previousRoute"
+            [eyebrowText]="previousRoute"
             [descriptionText]="descriptionText"
             [headerText]="headerText"
             [imageAltText]="imageAltText"
-            [mobileView]="mobileView"
             [backgroundImageUrl]="'/assets/' + backgroundUrl"
         >
         </app-category-hero>
@@ -13,34 +12,32 @@
 
     <div class="knobs-container">
         <h1>Knobs</h1>
-        <div>
-            <span class="knob-name">previousRoute</span>
-            <textarea [(ngModel)]="previousRoute"></textarea>
-        </div>
-        <div>
-            <span class="knob-name">headerText</span>
-            <textarea [(ngModel)]="headerText"></textarea>
-        </div>
-        <div>
-            <span class="knob-name">descriptionText</span>
-            <textarea [(ngModel)]="descriptionText"></textarea>
-        </div>
-        <div>
-            <span class="knob-name">imageAltText</span>
-            <textarea [(ngModel)]="imageAltText"></textarea>
-        </div>
-        <div>
-            <span class="knob-name">isMobile</span>
-            <input type="checkbox" [(ngModel)]="mobileView" [value]="mobileView" />
-        </div>
-        <div>
-            <span class="knob-name">Background Image Source</span>
+        <div class="user-inputs">
+            <div>
+                <span class="knob-name">previousRoute</span>
+                <textarea [(ngModel)]="previousRoute"></textarea>
+            </div>
+            <div>
+                <span class="knob-name">headerText</span>
+                <textarea [(ngModel)]="headerText"></textarea>
+            </div>
+            <div>
+                <span class="knob-name">descriptionText</span>
+                <textarea [(ngModel)]="descriptionText"></textarea>
+            </div>
+            <div>
+                <span class="knob-name">imageAltText</span>
+                <textarea [(ngModel)]="imageAltText"></textarea>
+            </div>
+            <div>
+                <span class="knob-name">Background Image Source</span>
 
-            <select [(ngModel)]="backgroundUrl">
-                <option value="inspector.jpg">inspector</option>
-                <option value="open-field.jpg">open-field</option>
-                <option value="sunrise.jpg">sunrise</option>
-            </select>
+                <select [(ngModel)]="backgroundUrl">
+                    <option value="inspector.jpg">inspector</option>
+                    <option value="open-field.jpg">open-field</option>
+                    <option value="sunrise.jpg">sunrise</option>
+                </select>
+            </div>
         </div>
     </div>
 </div>

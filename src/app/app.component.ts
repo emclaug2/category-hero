@@ -7,7 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
     backgroundUrl = 'sunrise.jpg';
-    mobileView = false;
     previousRoute = 'Company';
     imageAltText = 'Green sustainable field with sunbeams and mountains';
     headerText = 'We make a healthy planet work*';
